@@ -1,0 +1,39 @@
+{
+    "avm_2d_config":{
+        "cameraParamPath": "/home/adairtong/workspace/ADAS/resources/ori_data/yaml",
+        "cameraImagePath": "/home/adairtong/workspace/ADAS/resources/ori_data/images",
+        "avm2d_remap_path": "/home/adairtong/workspace/ADAS/resources/ori_data/weights_remap/four_pic_remap.yml",
+        "avm2d_weights_masks_path": "/home/adairtong/workspace/ADAS/resources/ori_data/weights_remap/weights_masks.yml",
+        "xl": 470,
+        "yl": 480,
+        "xr": 670,
+        "yr": 990,
+        "birdview_width": 1140,
+        "birdview_height": 1500,
+        "car_image_path": "/home/adairtong/workspace/ADAS/resources/ori_data/car.png"
+    },
+    "single_view_config":{
+        "input_image_path":"/home/adairtong/workspace/ADAS/resources/ori_data/ori_image/",
+        "output_image_path":"/home/adairtong/workspace/ADAS/bin/single_view_out/",
+        "camera_param_path":"/home/adairtong/workspace/ADAS/resources/ori_data/camera/camera/"
+
+
+    },
+
+    "transparent_chassis_config":{
+        "dr_path": "/home/adairtong/workspace/ADAS/resources/dr/dr.csv",
+        "config_path":"/home/adairtong/workspace/ADAS/resources/transparent_chassis/TransparentChassisCuda.yaml",
+        "input_dir_path":"/home/adairtong/workspace/ADAS/bin/avm_out/",
+        "output_dir_path":"/home/adairtong/workspace/ADAS/bin/transport_chassis/",
+        "bev_w": 1140,
+        "bev_h": 1500,
+        "bev_ratio":0.01,
+        "bev_center_x":570,
+        "bev_center_y":880,
+        "shift_lr":470,
+        "shift_tb":470,
+        "filter_kernel_size":75
+    }
+}
+
+

@@ -1,0 +1,49 @@
+syntax = "proto3";
+package adas;
+
+
+message avm_2d_config
+{
+	string camera_param_path = 1;
+	string camera_image_path = 2;
+	string avm2d_remap_path = 3;
+	string avm2d_weights_masks_path = 4;
+	uint32  xl=5;
+	uint32  yl=6;
+	uint32  xr=7;
+	uint32  yr=8;
+	uint32  birdview_width=9;
+	uint32  birdview_height=10;
+	string  car_image_path =11;
+}
+
+
+message single_view_config
+{
+	string input_image_path = 1;
+	string output_image_path = 2;
+	string camera_param_path = 3;
+}
+
+message transparent_chassis_config
+{
+	string dr_path = 1;
+	string config_path = 2;
+	string input_dir_path = 3;
+	string output_dir_path = 4;
+	uint32 bev_w =5;
+	uint32 bev_h =6;
+	float bev_ratio =7;
+	float bev_center_x=8;
+	float bev_center_y=9;
+	float shift_lr =10;
+	float shift_tb =11;
+	float filter_kernel_size =12;
+}
+
+
+message Config {
+    avm_2d_config avm_2d_config = 1;
+    single_view_config single_view_config = 2;
+	transparent_chassis_config transparent_chassis_config = 3;
+}
